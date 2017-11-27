@@ -1,0 +1,57 @@
+// /**
+//  * Copyright © Magento, Inc. All rights reserved.
+//  * See COPYING.txt for license details.
+//  */
+
+//
+//  List default styles reset
+//  ---------------------------------------------
+
+& when (@media-common = true) {
+    .social-links {
+        float: left;
+        ul:extend(.abs-reset-list all) {}
+
+        li {
+            float: left;
+            width: 18px;
+            height: 18px;
+            margin: 0 9px 0 0;
+
+            a {
+                font-family: @font-family__fontawesome;
+                font-size: 20px;
+                display: block;
+                width: 18px;
+                height: 18px;
+                background: @color-gray40;
+                border-radius: 50%;
+                color: @color-white;
+
+                span {
+                    display: none;
+                }
+
+                &.social-facebook {
+                    content: "/f09a";
+                }
+
+                &.social-linkedin {
+                    content: "/f0e";
+                }
+
+                &.social-youtube {
+                    content: "/f167";
+                }
+
+                &.social-gplus {
+                    content: "/f2b3";
+                }
+
+                &.social-twitter {
+                    content: "/f099";
+                }
+            }
+        }
+    }
+}
