@@ -13,8 +13,14 @@
                     <argument name="block_id" xsi:type="string">social-links</argument>
                 </arguments>`
             </block>
+            <block class="Magento\Cms\Block\Block" name="top-offer"  after="social-links">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">top-offer</argument>
+                </arguments>`
+            </block>
         </referenceContainer>
         <referenceBlock name="skip_to_content" display="false" />
         <move element="store.settings.currency" destination="footer-content-links" after="footer-menu"/>
+        <move element="navigation.sections" destination="header-wrapper" after="logo"/>
     </body>
 </page>

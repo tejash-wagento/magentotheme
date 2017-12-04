@@ -25,8 +25,8 @@
 @message-global-caution__border-color: none;
 
 @header__background-color: false;
-@header-panel__background-color: @color-gray-middle4;
-@header-panel__text-color: @color-white;
+@header-panel__background-color: @color-gray-light0;
+@header-panel__text-color: @color-gray40;
 @header-icons-color: @color-gray46;
 @header-icons-color-hover: @color-gray20;
 @customer-welcome__z-index: @dropdown-list__z-index + 1;
@@ -88,6 +88,10 @@
             .lib-css(background-color, @header-panel__background-color);
             .lib-css(color, @header-panel__text-color);
         }
+        .header.panel {
+            position: relative;
+        }
+
     }
 
     .header.panel {
@@ -448,7 +452,6 @@
         margin-bottom: 0;
 
         .panel.wrapper {
-            border-bottom: 1px solid @secondary__color;
             .lib-css(background-color, @header-panel__background-color);
         }
 

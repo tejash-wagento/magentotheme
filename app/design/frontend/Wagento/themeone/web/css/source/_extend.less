@@ -11,47 +11,51 @@
     .social-links {
         float: left;
         ul:extend(.abs-reset-list all) {}
-
-        li {
-            float: left;
-            width: 18px;
-            height: 18px;
-            margin: 0 9px 0 0;
-
-            a {
-                font-family: @font-family__fontawesome;
-                font-size: 20px;
-                display: block;
+        ul {
+            > li {
+                float: left;
                 width: 18px;
                 height: 18px;
-                background: @color-gray40;
-                border-radius: 50%;
-                color: @color-white;
+                margin: 0 9px 0 0;
 
-                span {
-                    display: none;
-                }
+                a {
+                    font-size: 12px;
+                    font-family: @font-family__fontawesome;
+                    display: block;
+                    width: 20px;
+                    height: 20px;
+                    line-height: 20px;
+                    background: @color-gray40;
+                    border-radius: 50%;
+                    color: @color-white;
+                    text-align:center;
 
-                &.social-facebook {
-                    content: "/f09a";
-                }
+                    span {
+                        display: none;
+                    }
 
-                &.social-linkedin {
-                    content: "/f0e";
-                }
+                    &.social-facebook:before {
+                        content: "\f09a";
+                    }
 
-                &.social-youtube {
-                    content: "/f167";
-                }
+                    &.social-linkedin:before {
+                        content: "\f0e1";
+                    }
 
-                &.social-gplus {
-                    content: "/f2b3";
-                }
+                    &.social-youtube:before {
+                        content: "\f167";
+                    }
 
-                &.social-twitter {
-                    content: "/f099";
+                    &.social-gplus:before {
+                        content: "\f0d5";
+                    }
+
+                    &.social-twitter:before {
+                        content: "\f099";
+                    }
                 }
             }
         }
+
     }
 }
