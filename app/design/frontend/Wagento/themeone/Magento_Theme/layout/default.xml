@@ -22,5 +22,7 @@
         <referenceBlock name="skip_to_content" display="false" />
         <move element="store.settings.currency" destination="footer-content-links" after="footer-menu"/>
         <move element="navigation.sections" destination="header-wrapper" after="logo"/>
+        <move element="product.info.overview" destination="page.main.title" after="-" />
+        <move element="product.info.stock.sku" destination="product.info.main" after="product.info.price" />
     </body>
 </page>

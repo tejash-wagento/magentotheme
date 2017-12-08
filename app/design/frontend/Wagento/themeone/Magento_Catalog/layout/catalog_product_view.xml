@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page layout="1column" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="product.info.main">
+            <container name="catalog-product-social" as="detail-page" after="-"  label="Catalog Product Social" htmlTag="div" htmlClass="catalog-product-social">
+                <block class="Magento\Cms\Block\Block" name="social-links" after="product.info.addtocart">
+                    <arguments>
+                        <argument name="block_id" xsi:type="string">social-links</argument>
+                    </arguments>`
+                </block>
+            </container>
+        </referenceContainer>
+        <move element="product.info.review" destination="product.info.price" after="product.info.stock.sku"/>
+        <move element="product.price.final" destination="product.info.price" after="product.info.review"/>
+        <move element="product.info.social" destination="product.info.addtocart" after="-"/>
+    </body>
+</page>
